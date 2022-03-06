@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AosTestComponent from './AnimationTest/AosTestComponent'
+import WalletScene from './Scene/WalletScene'
+
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/*<App />*/}
+    {/*<AosTestComponent once/>*/}
+    <WalletScene />
   </React.StrictMode>,
   document.getElementById('root')
 );
