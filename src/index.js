@@ -5,15 +5,19 @@ import App from './App';
 import AosTestComponent from './AnimationTest/AosTestComponent'
 import WalletScene from './Scene/WalletScene'
 
+import { Provider } from 'react-redux'
+import store from './Redux/store'
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/*<App />*/}
-    {/*<AosTestComponent once/>*/}
-    <WalletScene />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      {/*<App />*/}
+      {/*<AosTestComponent once/>*/}
+      <WalletScene />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
